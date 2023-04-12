@@ -1,0 +1,93 @@
+@media screen and (min-width: 1024px) {
+	
+
+.main-wrapper{
+    background-image: url(../../../assets//images/birthdaySample9.jpg);
+    transform: scaleX(-1);
+    /*background-position: top;
+    background-position: right;
+    background-size: cover;*/
+    background-size: 2300px 1080px; /*ancho alto*/
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-title{
+    transform: scaleX(-1);
+    margin: 1rem 2rem; 
+}
+
+.month-text{
+    font-size: 5rem;
+}
+
+.birthday-text{
+    font-size: 3rem;
+}
+
+.contenedor-birthday{
+    max-width: 55%;
+    position: absolute;
+    right: 160px; /* margen derecha a izquierda */
+    top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.birthday{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 1rem);
+    text-align: left;
+	/*Instal package control Color Highlighter*/
+	/*Instal package control ColorPicker = ctrl + shift+c*/
+	margin-bottom: 2rem;
+    
+}
+
+/* nombre*/
+.user-name{
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    
+}
+/* contenedor de dia*/
+.date-birthday i{
+    font-size:45px;
+    color: #a24dd6;
+}
+
+/* dia*/
+.day{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    width: 36px;
+    margin: 17px 5px;
+}
+
+.footer{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img{
+    width: 150px;
+}
+
+}

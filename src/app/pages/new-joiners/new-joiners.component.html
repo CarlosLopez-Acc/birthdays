@@ -1,0 +1,36 @@
+<div class="newjoiners-container">
+    <div class="title-img"></div>
+    <div class="row-container">
+        <div class="col-9 ribbon-wrapper">
+            <div class="ribbon ribbon-primary main-title">
+                Welcome and congratulations for being part of our team! 
+            </div>
+            <h3 class="ribbon-content">
+                Our Capability is happy to enroll new talent, just like you! We are looking forward for your success and development in Accenture
+            </h3>
+
+        </div>
+        <div class="people-container">
+
+            <div *ngFor="let joiner of listaNewJoiners; let i = index"
+                [ngClass]="{'joiner-information' : !joiner.title, 'updateMargin': i === 1 || i === 2}"
+                [ngStyle]="{'background-color': (joiner.color + '4D')}">
+                <!-- <img [src]="../../../assets/profile-pictures/profile-3-1.3e702c5.png" (error)="imageError($event, joiner.EID)" alt="user" class="profile-picture img-circle img-responsive"  [ngStyle]="{'border-color': joiner.color}"> -->
+                <!-- Cannot GET /assets/profile-pictures/profile-3-1.3e702c5.jpg IDK how to resolve that issue getSrcImg('jpg')-->
+                <img [src]="getSrcImg('jpg', joiner.EID)" alt="" class="profile-picture img-circle img-responsive"
+                    [ngStyle]="{'border-color': joiner.color}">
+                <div class="people-description">
+                    <h1>{{joiner.username}}</h1>
+                    <h2>{{joiner.EID}}</h2>
+                    <h3>{{joiner.Speciality}}</h3>
+                </div>
+
+                {{prueba()}}
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>FY23 Q2</h1>
+        <img class="logo" src="../../../assets/images/logo4.png" alt="">
+    </header>
+</div>

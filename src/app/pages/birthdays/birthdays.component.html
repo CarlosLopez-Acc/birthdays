@@ -1,0 +1,21 @@
+<div class="main-wrapper">
+    <div class="contenedor-title">
+        <h1 class="month-text">APRIL</h1>
+        <h2 class="birthday-text">BIRTHDAYS</h2>
+    </div>
+</div>
+<div class="contenedor-birthday">
+    <li *ngFor="let item of menuItems" class="birthday">
+        <p class="user-name">{{item.userName}}</p>
+        <span class="date-birthday">
+            <span class="day">{{item.birthday}}</span>
+            <i class="bi bi-calendar"></i>
+        </span>
+    </li>
+</div>
+<footer>
+    <div class="footer">
+        <img src="../../../assets/images/logo4.png" alt="" height="160" width="230">
+        <img src="../../../assets/images/logo5.png" alt="" height="140" width="480">
+    </div>
+</footer>
